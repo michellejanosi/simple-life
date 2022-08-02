@@ -10,6 +10,11 @@ body {
   font-weight: 300;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 /* typography */
 h1, 
 h2, 
@@ -73,24 +78,30 @@ strong {
   margin: 0 auto;
 }
 
-.container-nav {
+.container-flex {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 header {
   background: #f8f8f8;
   padding: 2em 0;
+  text-align: center;
 }
 
-@media (max-width: 675px) {
-    .container-nav {
-        flex-direction: column;
-    }
+@media (min-width: 675px) {
+  .container-flex {
+    flex-direction: row;
+  }
 
-    header {
-        text-align: center;
-    }
+  main {
+    width: 75%;
+  }
+
+  aside {
+    width: 20%;
+  }
 }
 
 /* navigation */

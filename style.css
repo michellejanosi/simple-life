@@ -143,7 +143,7 @@ nav a:focus {
   color: #707070;
 }
 
-@media (min-width: 675px) {
+@media (max-width: 675px) {
     nav ul {
         flex-direction: column;
     }
